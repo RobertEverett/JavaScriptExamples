@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>Rock Paper Scissors Sample</title></head>
+
+<style>
+
+#Rock {
+height: 700px;
+width: 33%;
+display: inline-block;
+
+}
+@media screen and (max-width: 700px) {
+  #Rock{ background-size: 100% 100%;}
+}
+
+#rockpic {
+height: 100%;
+width: 100%;
+background-image: url("Rock.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+@media screen and (max-width: 700px) {
+  #rockpic{ background-size: 100% 100%;}
+}
+
+#Paper {
+height: 700px;
+width: 33%;
+display: inline-block;
+}
+@media screen and (max-width: 700px) {
+  #Paper{ background-size: 100% 100%;}
+}
+
+#paperpic {
+height: 100%;
+width: 100%;
+background-image: url("Paper.png");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+@media screen and (max-width: 700px) {
+  #paperpic{ background-size: 100% 100%;}
+}
+
+#Scizzors {
+height: 700px;
+width: 33%;
+display: inline-block;
+
+}
+@media screen and (max-width: 500px) {
+  #Scizzors{ background-size: 100% 100%;}
+}
+
+#scizzorspic {
+height: 100%;
+width: 100%;
+background-image: url("Scizzors.png");
+background-repeat: no-repeat;
+background-size: cover;
+}
+@media screen and (max-width: 350px) {
+  #scizzorspic{ background-size: 100% 100%; width: 33%;}
+}
+
+
+
+</style>
+
+<body>
+<div id="Rock">
+<div id="rockpic">
+
+</div>
+</div>
+
+<div id="Paper">
+<div id="paperpic">
+
+</div>
+</div>
+
+<div id="Scizzors">
+<div id="scizzorspic">
+
+</div>
+</div>
+
+
+
+<script>
+var userChoice = prompt("Do you choose rock, paper, or scissors?");
+var computerChoice = Math.random();
+
+if (computerChoice <= 0.33) {
+computerChoice = "rock";
+alert("Computer: rock" );
+}
+
+else if(computerChoice <= 0.66) {
+computerChoice = "paper";
+alert("Computer: paper");
+}
+
+else if(computerChoice <= 100) {
+computerChoice = "scissors";
+alert("Computer: scissors");
+}
+
+else {
+ 
+ } 
+
+
+var compare = function(choice1, choice2) {
+
+  
+
+  if(choice1 === choice2) {
+     alert("Tie!");
+}
+
+
+else if(choice1 === "rock" && choice2 === "scissors") {
+    alert("rock wins");
+}
+
+else if(choice1 === "rock" && choice2 === "paper") { 
+alert("paper wins");
+ 
+}
+
+else {
+}
+
+
+if(choice1 === "paper") {
+   
+
+
+if(choice2 === "scissors") {
+    alert("scissors wins");
+}
+
+else if(choice2 === "rock") { 
+    alert("paper wins");
+ 
+}
+
+else {
+
+}
+
+}
+
+
+if(choice1 === "scissors") {
+   
+
+
+if(choice2 === "paper") {
+    alert("scissors wins");
+}
+
+else if(choice2 === "rock") { 
+    alert("rock wins");
+ 
+}
+
+else {
+
+}
+}
+
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+compare(userChoice,computerChoice);
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
