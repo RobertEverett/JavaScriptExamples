@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head><title>Magic 8 Ball Demo</title></head>
+
+<style>
+h1 {
+text-align: center;
+}
+
+#ballcontainer {
+height: 700px;
+width: 1000px;
+margin: auto;
+background-color: lightgray;
+}
+
+#piccontainer {
+
+width: 700px;
+height: 700px;
+margin-left: 5%;
+
+}
+
+#ballpic {
+margin-left: 30%;
+
+}
+
+p {
+margin-left: 50%;
+
+}
+
+#userinput {
+margin-left: 48%;
+display: inline-block;
+
+}
+
+#ShakeButtonContainer {
+display: inline-block;
+
+}
+
+#ShakeButton {
+display: inline-block;
+
+
+}
+
+
+</style>
+
+<body>
+<div id="ballcontainer">
+  <h1>Magic 8 Ball Demo</h1>
+  <div id="piccontainer">
+    
+  <img id="ballpic" src="BallImage.jpg"/>
+
+<p>Ask me anything!</p>
+
+<input id="userinput" type="input"/>
+ 
+<form id="ShakeButtonContainer">
+ <input name="Shake" type="button" id="ShakeButton" value="Shake" onclick="BallResponse()"/> 
+</form>
+<p id="BallResponse"></p>
+
+
+<script>
+function BallResponse() {
+var list = [
+	"Yes, definitely",
+	"Maybe",
+	"Don't count on it",
+	"No",
+	"Never"
+	];
+
+
+var number = Math.floor(Math.random()*5);
+document.getElementById("BallResponse").innerHTML=list[number];
+}
+</script>
+    
+  </div>
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
