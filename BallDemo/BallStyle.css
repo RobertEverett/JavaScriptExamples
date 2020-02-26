@@ -1,0 +1,41 @@
+h1 {
+text-align: center;
+}
+
+#ballcontainer {
+height: 700px;
+width: 1000px;
+margin: auto;
+background-color: lightgray;
+}
+
+#piccontainer {
+
+width: 700px;
+height: 500px;
+margin-left: 15%;
+background-size: 700px 500px;
+background-image: url("8Ball.png");
+}
+
+#ballpic {
+margin-left: 30%;
+}
+
+p {
+margin-left: 50%;
+}
+
+#userinput {
+margin-left: 48%;
+display: inline-block;
+}
+
+#ShakeButtonContainer {
+margin-left: 60%;
+margin-top: -6%;
+}
+
+#ShakeButton {
+display: inline-block;
+}
