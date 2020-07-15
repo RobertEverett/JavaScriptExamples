@@ -13,7 +13,7 @@ text-shadow: 0 12px 12px rgb(0,0,0);
 }
 
 .CalculatorContainer{
-width:500px;
+width:510px;
 height:335px;
 margin:auto;
 background-color: black;
@@ -23,23 +23,20 @@ box-shadow: 0 16px 16px rgb(0,0,0);
 
 #finalresult{
 margin-left: 2px;
-width:495px;
+width:490px;
 }
 
 #clearbutton{
 margin-top: 5px;
-width:492.5px;
+width:495px;
 }
 
 input{
+margin-left: 2px;
 width:120px;
 height:50px;
 background-color:gray;
 font-size:30px;
 color:white;
 border-bottom:1px solid black;
-}
-
-input {
-    
 }
