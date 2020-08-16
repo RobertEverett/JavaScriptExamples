@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link href="todostyle.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+  
+<div id="Container">
+
+  <div id="head">
+    <div id="refreshcontainer">
+    <img src="refreshbutton.png" onclick="ClearList()"id="refresh">
+    </div>
+  <div id="datecontainer">
+ 
+  </div>
+  </div>
+
+  <div id="ListContainer">
+
+    <div id="TaskList">
+      <ol id="Tasks"></ol>
+    </div>
+
+    <div id="inputcontainer">
+       <img id="addbtn" onclick="AddToList(); checklist();" src="addbutton.png">
+       <input type="text" id="inputfield" placeholder="Enter Task">
+      
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
